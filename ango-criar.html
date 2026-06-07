@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ango-criar.css">
+    <title>Ango-Music</title>
+</head>
+<body>
+
+    <header class="logo1"> <!-- Mude de date: para data: -->
+        <img src="data:image;base64,/9j/4AAQSkZJRgABAQEASABIAAAA" class="logo2">
+
+    </header>
+         <div class="fundo">
+        <div class="conteiner">
+            <div class="logo">
+                <h1>Ango</h1>
+                <span>Music AGM</span>
+            </div>
+        </div>
+        <div class="campo">
+            <label for="Nome">Nome</label>
+            <input type="text" id="input-nome" name="nome" placeholder="Digite seu nome" oninput="validarNome(this,'msg-nome')">
+            <span id="msg-nome" class="msg-erro">Por favor digite seu nome</span>
+        </div>
+        <div class="campo">
+            <label for="E-mail">E-mail</label>
+                <input type="email" id="input-email" name="email" placeholder="Seu@exemplo.com" oninput="validarEmail(this,'msg-email')">
+                <span id="msg-email" class="msg-erro">Por favor digite seu E-mail </span>
+                </div>
+                <div class="campo"><label for="senha">senha</label>
+                <input type="password" name="senha" id="input-senha" placeholder="Digite sua senha" oninput="validarSenha(this,'msg-senha')">
+            <span id="msg-senha" class="msg-erro">Por favor digite sua senha</span></div>
+            <div class="campo"><label for="confirmar-senha">Confirmar senha</label>
+                <input type="password" name="confirmar-senha" id="input-confirmar-senha" placeholder="Confirme sua senha" oninput="validarConfirmarSenha(this,'msg-confirmar-senha')">
+                <span id="msg-confirmar-senha" class="msg-erro">As senhas não coincidem</span>
+            </div>
+            <div class="btn">
+            
+                <button id="btn-entrar" class="btn-voltar" onclick="window.location.href='ango-entrar.html'"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-big-left-icon lucide-arrow-big-left"><path d="M10.793 19.793a.707.707 0 0 0 1.207-.5V16a1 1 0 0 1 1-1h6a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1h-6a1 1 0 0 1-1-1V4.707a.707.707 0 0 0-1.207-.5l-6.94 6.94a1.207 1.207 0 0 0 0 1.707z"/></svg> voltar</button>
+                <button id="btn-criar" class="btn-criar" onclick="criarConta()">Criar Conta</button>
+            </div>
+                
+        </div>
+    </div>
+    
+</body>
+</html>

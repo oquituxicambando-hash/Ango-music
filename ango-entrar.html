@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ango-Music</title>
+    <link rel="stylesheet" href="ango-entrar.css">
+</head>
+<body>
+    <div class="fundo">
+        <div class="conteiner">
+            <div class="logo">
+                <h1>Ango</h1>
+                <span>Music AGM</span>
+            </div>
+        </div>
+        <div class="campo">
+            <label for="Nome">Nome</label>
+            <input type="text" id="input-nome" name="nome" placeholder="Digite seu nome" oninput="validarNome(this,'msg-nome')">
+            <span id="msg-nome" class="msg-erro">Por favor digite seu nome</span>
+        </div>
+        <div class="campo">
+            <label for="E-mail">E-mail</label>
+                <input type="email" id="input-email" name="email" placeholder="Seu@exemplo.com" oninput="validarEmail(this,'msg-email')">
+                <span id="msg-email" class="msg-erro">Por favor digite seu E-mail </span>
+                </div>
+                <div class="campo"><label for="senha">senha</label>
+                <input type="password" name="senha" id="input-senha" placeholder="Digite sua senha" oninput="validarSenha(this,'msg-senha')">
+            <span id="msg-senha" class="msg-erro">Por favor digite sua senha</span></div>
+            <div class="btn">
+            
+                <button id="btn-entrar" class="btn-entrar" onclick="entrar()">Entrar</button>
+                <button id="btn-criar" class="btn-criar" onclick="window.location.href='ango-criar.html'">Criar Conta</button>
+            </div>
+                
+        </div>
+    </div>
+    
+</body>
+</html>
